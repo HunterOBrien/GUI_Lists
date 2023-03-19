@@ -90,16 +90,14 @@ def yahtzee():
     if p1score > p2score:
         winner = p1score
         loser = p2score
-        ans = easygui.ynbox(
+        ans = easygui.msgbox(
             f"The winner of the game was {p2} with a score of {p2score}\n {p1} had a score of {p1score}\n "
-            f"Do you want to play another game?",
             "Game Results")
     elif p2score > p1score:
         winner = p2score
         loser = p1score
-        ans = easygui.ynbox(
+        ans = easygui.msgbox(
             f"The winner of the game was {p1} with a score of {p1score}\n {p2} had a score of {p2score}\n "
-            f"Do you want to play another game?",
             "Game Results")
 
     else:
